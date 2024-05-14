@@ -1,0 +1,61 @@
+#map{
+    margin-left: 120px;
+    margin-right: 120px; 
+    width: 82%;
+    margin-top: 100px;
+    box-shadow: 5px 5px 5px 5px white;
+}
+#contact{
+    display: flex;
+}
+#con1{
+    margin-left: 120px;
+    margin-top: 50px;
+}
+#head{
+    color: #4B3049;
+    margin-bottom: 50px;
+    font-weight: 600;
+    font-size: 30PX;
+}
+textarea{
+    border: 1px solid rgb(187, 185, 185);
+}
+#tx{
+    background-color: white;
+    border: 1px solid rgb(187, 185, 185);
+    border-radius: 0%;
+    width: 340px;
+    margin-top: 30px;
+}
+#tx1{
+    background-color: white;
+    border: 1px solid rgb(187, 185, 185);
+    border-radius: 0%;
+    width: 685px;
+    margin-top: 30px;
+}
+.con-btn{
+    margin-bottom: 100px;
+}
+#con2{
+    margin-left: 100px;
+    margin-top: 130px;
+}
+#tool{
+    margin-bottom: 20px;
+}
+#tool i{
+    font-size: 30px;
+    color: gray;
+}
+#tol-hed{
+    color: black;
+    font-size: 20px;
+    margin-left: 10px;
+}
+#tol-bot{
+    color: gray;
+    font-size: 18px;
+    margin-left: 46px;
+}

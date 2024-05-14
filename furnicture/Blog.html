@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- bootstrap icons  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- bootstrap icons  -->
+    <!-- animated css  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <!-- animated css  -->
+    <style>
+        .head{
+            width: 100%;
+            height: auto;
+            background-color: rgb(253, 223, 253);
+}
+        header #imgs{
+           height: 400px;
+           width: 100%;
+        }
+        header{
+            height: 100vh;
+            background-size: cover;
+        }
+        header i{
+            right: 24.5%;
+        }
+        .subheader{
+            width: 95%;
+            background-color: rgb(253, 223, 253);
+        }
+        .subheader a{
+            color: rgb(22, 22, 109);
+        }
+        .subheader i{
+            color: rgb(22, 22, 109);
+        }
+        header input{
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background: transparent;
+        }
+        header h1{
+            font-size: 50px;
+        }
+        .extr{
+            width: 100%;
+            background-color: rgb(253, 223, 253);
+            height: 100px;
+            /* margin-left: 10%; */
+        }
+        .txt{
+            top: 30%;
+            right: 15%;
+        }
+        .b-1{
+            width: 60%;
+            height: 350px;
+        }
+        .b-1 div{
+            width: 100px;
+            padding: 5px;
+            top: 90%;
+            left: 13%;
+            border: none;
+            background-color: coral;
+        }
+        .b-2{
+            width: 30%;
+            height: auto;
+        }
+        .b-2 input{
+            padding: 12px;
+            width: 90%;
+        }
+        .b-2 button{
+            padding: 12px;
+            width: 90%;
+        }
+        .b-2 button:hover{
+            background-color: darkgreen;
+            color: white;
+        }
+        .b-3{
+            width: 30%;
+        }
+        .b-3 button{
+            background-color: rgb(255, 255, 255);
+        }
+        .b-3 button:hover{
+            background-color: transparent;
+            color: darkblue;
+        }
+        .b-4{
+            width: 60%;
+            height: 350px;
+        }
+        .b-4 div{
+            width: 100px;
+            padding: 5px;
+            top: 282%;
+            left: 13%;
+            border: none;
+            background-color: coral;
+        }
+        .b-5{
+            width: 30%;
+            height: auto;
+        }
+        .b-5 input{
+            padding: 12px;
+            width: 90%;
+        }
+        .b-5 button{
+            padding: 12px;
+            width: 90%;
+        }
+        .b-5 button:hover{
+            background-color: darkgreen;
+            color: white;
+        }
+        .dispatch{
+    width: 100%;
+    height: 350px;
+    background-color: rgb(253, 223, 253);
+}
+.cash{
+    width: 22%;
+}
+.cash i{
+    font-size: 55px;
+    color: rgb(36, 36, 86);
+}
+.cash h6{
+    color: rgb(78, 78, 114);
+}
+.cash:hover{
+    border: 1px solid lightgray;
+}
+.end{
+    width: 100%;
+    background-color: rgb(253, 223, 253);
+}
+footer{
+    width: 100%;
+    height: 500px;
+    /* margin-left: 3%; */
+    background-color: rgb(25, 25, 58);
+}
+.ftre{
+    width: 30%;
+    height: 300px;
+}
+.ftr{
+    width: 22%;
+    height: 250px;
+}
+        </style>
+</head>
+<body>
+    <header class="head">
+        <div class="subheader navbar navbar-expand-lg justify-content-evenly">
+            <div class="navbar-brand">
+                <img src="image/logo.png" alt="" class="w-75">
+            </div>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapes" data-bs-target="#navbar-support">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="" class="nav-link fs-5">Home</a></li>
+                    <div class="dropdown">
+                        <a class="bdropdown-toggle nav-link ps-3 fs-5 dropdown" data-bs-toggle="dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                         Product
+                       </a> 
+                       <!-- <li class="nav-item"><a href="" class="nav-link ps-3 fs-5 dropdown" data-bs-toggle="dropdown">Page</li> -->
+                       <ul class="dropdown-menu">
+                         <li><a class="dropdown-item" href="categories.html">Categories</a></li>
+                         <li><a class="dropdown-item" href="product.html">Product-details</a></li>
+                       </ul>
+                     </div>       
+                    <li class="nav-item"><a href="" class="nav-link ps-3 fs-5">About</a></li>
+                    <div class="dropdown">
+                         <a class="bdropdown-toggle nav-link ps-3 fs-5 dropdown" data-bs-toggle="dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Page
+                        </a> 
+                        <!-- <li class="nav-item"><a href="" class="nav-link ps-3 fs-5 dropdown" data-bs-toggle="dropdown">Page</li> -->
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="login.html">Log in</a></li>  
+                          <li><a class="dropdown-item" href="card.html">Card</a></li>
+                          <li><a class="dropdown-item" href="check-out.html">check-out</a></li>
+                        </ul>
+                      </div>
+
+                    <li class="nav-item"><a href="Blog.html" class="nav-link ps-3 fs-5">Blog</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link ps-3 fs-5">Contact</a></li>
+                </ul>
+            </nav>
+            <input type="text" name="" id="" placeholder="Search Products" class="position-relative ps-1 pe-5 pb-2"><i class="bi bi-search position-absolute"></i>
+            <a href="" class="text-decoration-none fs-5">My Account</a>
+            <i class="bi bi-bag-check-fill fs-2"></i>
+        </div>
+        <img src="image/h1_hero.png" alt="" id="imgs" class="position-relative">
+        <div class="position-absolute txt">
+            <h1 class="text-white fw-bolder">BLOG</h1>
+            <a href="" class="text-decoration-none fw-bold fs-5 text-white">Home</a> <a href="" class="text-decoration-none fw-bold fs-5 text-white">>Blog</a>
+        </div>
+    </header>
+    <!-- <div class="extr"></div> -->
+    <br><br>
+    <div class="container d-flex justify-content-around  pt-3 ">
+        <div class="b-1">
+            <img src="image/post-6.webp" alt="" class="w-100 h-100 position-relative">
+            <h4 class="mt-5">Google inks pact for new 35-storey office</h4>
+            <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
+            <h6 class="text-secondary"> <i class="bi bi-person me-2"></i>Travel, Lifestyle &nbsp;&nbsp;&nbsp;<i class="bi bi-chat me-2"></i>03 Comments</h6>
+        </div>
+        <div class="b-2 p-3">
+            <div class="p-3 bg-light">
+                <input type="text" name="" id="" placeholder="Search keyword" class="ms-3 border">
+                <button type="button" class="ms-3 mt-3 border">S E A R C H</button>
+            </div>
+            <div class="p-3 bg-light mt-4">
+                <h5 class="mb-4">Category</h5>
+                <div class="mb-4 border-bottom text-secondary  pb-2">Resaurant food(37)</div>
+                <div class="mb-4 border-bottom text-secondary  pb-2">Travel news(10)</div>
+                <div class="mb-4 border-bottom text-secondary  pb-2">Modern technology(03)</div>
+                <div class="mb-4 border-bottom  text-secondary pb-2">Product(11)</div>
+                <div class="mb-4 border-bottom  text-secondary pb-2">Inspiration21</div>
+                <div class="mb-4 border-bottom  text-secondary pb-2">Health Care (21)09</div>
+            </div>
+        </div>
+    </div>
+    <div class="container d-flex justify-content-around pt-3 mt-3">
+        <div class="b-1 border">
+            <img src="image/single_blog_3.png" alt="" class="w-100 h-100 position-relative">
+            <div class="border text-center position-absolute rounded-3">
+                <h1>15</h1>
+                <h6>Jan</h6>
+            </div>
+            <h4 class="mt-5">Google inks pact for new 35-storey office</h4>
+            <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
+            <h6 class="text-secondary"> <i class="bi bi-person me-2"></i>Travel, Lifestyle &nbsp;&nbsp;&nbsp;<i class="bi bi-chat me-2"></i>03 Comments</h6>
+        </div>
+        <div class="b-3 p-3">
+            <div class="p-3 bg-light">
+               <h5>Tag Clouds</h5>
+               <button type="button" class="text-secondary border mb-2 ms-2 mt-3">project</button>
+               <button type="button" class="text-secondary border mb-2 ms-2 mt-3">love</button>
+               <button type="button" class="text-secondary border mb-2 ms-2 mt-3">technology</button>
+               <button type="button" class="text-secondary border mb-2 ms-2 mt-3">travel</button>
+               <button type="button" class="text-secondary border mb-2 ms-2">Resaurant</button>
+               <button type="button" class="text-secondary border mb-2 ms-2">life style</button>
+               <button type="button" class="text-secondary border mb-2 ms-2">design</button>
+               <button type="button" class="text-secondary border mb-2 ms-2">illustration</button>
+            </div>
+            <div class="p-3 bg-light mt-4">
+                <h5 class="mb-4 border-bottom pb-2">Instagram Feeds</h5>
+                <div class="d-flex flex-wrap justify-content-evenly">
+                    <div>
+                        <img src="image/post_5.png" alt="">
+                    </div>
+                    <div>
+                        <img src="image/post_6.png" alt="">
+                    </div>
+                    <div>
+                        <img src="image/post_7.png" alt="">
+                    </div>
+                    <div>
+                        <img src="image/post_8.png" alt="" class="mt-3">
+                    </div>
+                    <div>
+                        <img src="image/post_9.png" alt="" class="mt-3">
+                    </div>
+                    <div>
+                        <img src="image/post_10.png" alt="" class="mt-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container d-flex justify-content-around pt-3 mt-4">
+        <div class="b-4">
+            <img src="image/single_blog_4.png" alt="" class="w-100 h-100 position-relative">
+            <div class="border text-center position-absolute rounded-3">
+                <h1>15</h1>
+                <h6>Jan</h6>
+            </div>
+            <h4 class="mt-5">Google inks pact for new 35-storey office</h4>
+            <p>That dominion stars lights dominion divide years for fourth have don't stars is that he earth it first without heaven in place seed it second morning saying.</p>
+            <h6 class="text-secondary"> <i class="bi bi-person me-2"></i>Travel, Lifestyle &nbsp;&nbsp;&nbsp;<i class="bi bi-chat me-2"></i>03 Comments</h6>
+        </div>
+        <div class="b-5 p-3">
+            <div class="p-3 bg-light">
+                <h5 class="mb-4">Newsletter</h5>
+                <input type="text" name="" id="" placeholder="Email" class="ms-3 border">
+                <button type="button" class="ms-3 mt-3 border mb-3">S U B S C R I B E</button>
+            </div>
+        </div>
+    </div><br><br><br><br><br><br><br><br>
+    <div class="dispatch mt-5 d-flex justify-content-evenly align-items-center">
+        <div class="cash p-4">
+            <i class="bi bi-truck"></i>
+            <h4 class="mt-4 pb-2">Fast & Free Delivery</h4>
+            <h6>Free delivery on all orders</h6>
+        </div>
+        <div class="cash p-4">
+            <i class="bi bi-file-earmark-lock2"></i>
+            <h4 class="mt-4 pb-2">Secure Payment</h4>
+            <h6>Free delivery on all orders</h6>
+        </div>
+        <div class="cash p-4">
+            <i class="bi bi-wallet2"></i>
+            <h4 class="mt-4 pb-2">Money Back Guarantee</h4>
+            <h6>Free delivery on all orders</h6>
+        </div>
+        <div class="cash p-4">
+            <i class="bi bi-clock-history"></i>
+            <h4 class="mt-4 pb-2">Online Support</h4>
+            <h6>Free delivery on all orders</h6>
+        </div>
+    </div>
+    <div class="end">
+        <footer class="d-flex justify-content-evenly align-items-center text-white">
+            <div class="ftre">
+                <img src="image/logo2_footer.png" alt="" class="ms-5 mt-4 p-3">
+                <p class="p-3 ms-5">Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
+                <i class="bi bi-twitter ps-2 ms-5 fs-4"></i>
+                <i class="bi bi-facebook ps-2 me-2 fs-4"></i>
+                <i class="bi bi-pinterest fs-4"></i>
+            </div>
+            <div class="ftr d-flex flex-column text-center">
+                <h3 class="m-2">Quick links</h3>
+                <br>
+                <a href="" class="m-2 text-decoration-none text-white">Image Licensin</a>
+                <a href="" class="m-2 text-decoration-none text-white">Style Guide</a>
+                <a href="" class="m-2 text-decoration-none text-white">Privacy Policy</a>
+            </div>
+            <div class="ftr d-flex flex-column text-center">
+                <h3 class="m-2">Shop Category</h3>
+                <br>
+                <a href="" class="m-2 text-decoration-none text-white">Image Licensin</a>
+                <a href="" class="m-2 text-decoration-none text-white">Style Guide</a>
+                <a href="" class="m-2 text-decoration-none text-white">Privacy Policy</a>
+            </div>
+            <div class="ftr d-flex flex-column text-center">
+                <h3 class="m-2">Pertners</h3>
+                <br>
+                <a href="" class="m-2 text-decoration-none text-white">Image Licensin</a>
+                <a href="" class="m-2 text-decoration-none text-white">Style Guide</a>
+                <a href="" class="m-2 text-decoration-none text-white">Privacy Policy</a>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="js/wow.min.js"></script>
+<script>
+//   new WOW().init();
+$(document).ready(function(){
+  new WOW().init();
+});
+</script>
+</html>

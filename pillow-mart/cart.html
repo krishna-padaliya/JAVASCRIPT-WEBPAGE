@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CART</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<link rel="stylesheet" href="home-style.css">
+<link rel="stylesheet" href="product-style.css">
+<link rel="stylesheet" href="cart-style.css">
+</head>
+<body>
+
+
+<!---------------------------------------------- header -------------------------------------->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="https://preview.colorlib.com/theme/pillowmart/img/logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active"  href="home.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="product.html">Products</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Page
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Login</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="Checkout.html">Product Checkout</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="cart.html">Shopping Cart</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Confirmation</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" id="icon">
+  
+  <!-- Modal -->
+  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <i class="bi bi-search"></i>
+  </button>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Search You Like</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <input type="search" style="width: 460px; border-top: none; border-right:none; border-left: none;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+                <i class="bi bi-cart-fill">
+                    <span class=" translate-middle badge rounded-pill bg-danger" id="num">
+                        9+
+                    </span>
+                </i>
+            </form>
+          </div>
+        </div>
+      </nav>
+<!---------------------------------------------- header -------------------------------------->
+<div id="heading">
+    <center><h1 id="hd">Cart List</h1></center>
+</div>
+
+
+<div id="cart"></div>
+
+<script>
+  var products=JSON.parse(localStorage.getItem("cart ")) || []
+  
+  if(localStorage.getItem("cart") == null){
+    var div = document.createElement("div");
+
+    var text = document.getElement("h1");
+    text.innerText = "Empty!"
+
+    var image = document.createElement("img");
+    image.setAttribute("src","https://mir-s3-cdn-cf.behance.net/projects/404/54b13147340145.Y3JvcCw0MDUsMzE3LDAsNDI.png")
+
+    div.append(text,image)
+    document.querySelector("#cart").appendChild(div)
+  }
+  else{
+    displaycart()
+    displaytotal()
+  }
+
+  function displaycart(){
+    document.querySelector("#cart").innerHTML=""
+    products.map((el,index)=>{
+      var div = document.createElement("div")
+
+      var image = document.createElement("img")
+      image.setAttribute("src",el.image)
+      image.setAttribute("id","cart-img")
+
+      var name = document.createElement("h5")
+      name.innerHTML = el.title
+
+      var price = document.createElement("p")
+      price.innerHTML = "Price : " +(el.price * (el.quantity || 1));
+      price.setAttribute("id","price-"+index);
+
+      var quantity = document.createElement('p');
+            quantity.innerText = "Quantity: " + (el.quantity || 1)
+            quantity.setAttribute("id","quantity-"+index)
+
+      var inc = document.createElement("button");
+      inc.classList.add("plus")
+          inc.innerText = "+"
+          inc.addEventListener("click",function(){
+            el.quantity = (el.quantity || 1) + 1;
+            document.getElementById("quantity-"+index).innerText = "Quantity :"+el.quantity ;
+            document.getElementById("price-"+index).innerText ="price"+ el.price * el.quantity;
+            updateCart();
+            displaytotal(); 
+          })
+          var ince = document.createElement("button");
+          ince.classList.add("plus")
+          ince.innerText = "-"
+          ince.addEventListener("click",function(){
+            el.quantity = (el.quantity || 1) - 1;
+            document.getElementById("quantity-"+index).innerText = "Quantity :"+el.quantity ;
+            document.getElementById("price-"+index).innerText ="price"+ el.price * el.quantity;
+            updateCart();
+            displaytotal(); 
+          })
+      var deletebtn = document.createElement("button")
+      deletebtn.innerText = "REMOVE"
+      deletebtn.setAttribute("id","del")
+      deletebtn.addEventListener("click",function(){
+        products.splice(index,1)
+        localStorage.setItem("cart",JSON.stringify(products))
+        displaycart()
+        displaytotal()
+      })
+
+      div.append(image,name,price,quantity,inc,ince,deletebtn);
+      document.querySelector("#cart").appendChild(div)
+    })
+  }
+
+  function displaytotal(){
+    var total = products.reduce(function(acc,el){
+      return acc + el.price * (el.quantity || 1)
+    },0)
+    var existingtotal = document.getElementById("grandtotal");
+    if(existingtotal){
+      if(total===0){
+        existingtotal.remove();
+      }
+      else{
+        existingtotal.innerText = "Grand Total = "+"Rs."+total
+      }
+  
+    }
+    else{ 
+       var amt = document.createElement("h5")
+    amt.innerText = "Grand Total = "+"Rs."+total
+    amt.setAttribute("id","grandtotal")
+    document.querySelector("#cart").append(amt) 
+  }
+  }
+  function updateCart(){
+    localStorage.setItem("cart",JSON.stringify(products));
+   }
+
+</script>

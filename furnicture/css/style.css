@@ -1,0 +1,163 @@
+.head{
+    width: 100%;
+    height: 900px;
+    background-color: rgb(253, 223, 253);
+}
+#imgs{
+    width: 100%;
+    height: 84%;
+}
+header{
+    height: 100vh;
+    background-size: cover;
+}
+header i{
+    right: 24.5%;
+}
+.subheader{
+    width: 95%;
+    background-color: rgb(253, 223, 253);
+}
+.subheader a{
+    color: rgb(22, 22, 109);
+}
+.subheader i{
+    color: rgb(22, 22, 109);
+}
+header input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    background: transparent;
+}
+/* .dropdown:hover{
+    display: block;
+} */
+.extr{
+    width: 100%;
+    background-color: rgb(253, 223, 253);
+    height: 100px;
+    /* margin-left: 10%; */
+}
+.txt{
+    width: 40%;
+    margin-left: 10%;
+    top: 40%;
+}
+.txt button:hover{
+    background-color: coral;
+    border: none;
+    color: white;
+}
+.anc a::before{
+    content: "";
+    width: 0%;
+    height: 100%;
+    border: 1px solid rgb(192, 229, 242);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 2s;
+}
+.anc a:hover{
+    width: 100%;
+    border: 1px solid darkred;
+
+}
+.sofas a{
+    color: rgb(47, 6, 6);
+}
+.dis:hover{
+    background-color: coral;
+    border: none;
+    color: white;
+}
+.sf button{
+    background-color: coral;
+    border: none;
+    color: white;
+    transition: 2s;
+}
+.sf button:hover{
+    background-color: transparent;
+    border: 1px solid coral;
+    color: darkblue;
+}
+#insta{
+    font-size: 50px;
+    color: coral;
+}
+.icon{
+    z-index: -1;
+}
+.icon:hover{
+    opacity: 0;
+}
+.ins{
+    top: 45%;
+    right: 45%;
+    z-index: 1;
+    display: none;
+}
+.inst{
+    top: 45%;
+    right: 45%;
+    display: none;
+}
+.inss-1 button{
+    background-color: coral;
+    border: none;
+    color: white;
+    transition: 2s;
+}
+.inss-1 button:hover{
+    background-color: transparent;
+    border: 1px solid coral;
+    color: darkblue;
+}
+.dis:hover{
+    background-color: coral;
+    border: none;
+    color: white;
+}
+.sofa{
+    width: 400px;
+}
+.dispatch{
+    width: 100%;
+    height: 350px;
+    background-color: rgb(253, 223, 253);
+}
+.cash{
+    width: 22%;
+}
+.cash:hover{
+    border: 1px solid lightgray;
+}
+.cash i{
+    font-size: 55px;
+    color: rgb(36, 36, 86);
+}
+.cash h6{
+    color: rgb(78, 78, 114);
+}
+.end{
+    width: 100%;
+    background-color: rgb(253, 223, 253);
+}
+footer{
+    width: 100%;
+    height: 500px;
+    /* margin-left: 3%; */
+    background-color: rgb(25, 25, 58);
+}
+.ftre{
+    width: 30%;
+    height: 300px;
+}
+.ftr{
+    width: 22%;
+    height: 250px;
+}
+

@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRODUCT2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<link rel="stylesheet" href="home-style.css">
+<link rel="stylesheet" href="product-style.css">
+</head>
+<style>
+    #main img{
+        width: 350px;
+        height: 300px;
+    }
+</style>
+<body>
+
+
+<!---------------------------------------------- header -------------------------------------->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="https://preview.colorlib.com/theme/pillowmart/img/logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active"  href="home.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="product.html">Products</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Page
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Product Checkout</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="cart.html">Shopping Cart</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Confirmation</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" id="icon">
+  
+  <!-- Modal -->
+  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <i class="bi bi-search"></i>
+  </button>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Search You Like</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <input type="search" style="width: 460px; border-top: none; border-right:none; border-left: none;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+                <i class="bi bi-cart-fill">
+                    <span class=" translate-middle badge rounded-pill bg-danger" id="num">
+                        9+
+                    </span>
+                </i>
+            </form>
+          </div>
+        </div>
+      </nav>
+<!---------------------------------------------- header -------------------------------------->
+<div id="heading">
+    <center><h1 id="hd">Product</h1></center>
+</div>
+
+<div id="product">
+    <div id="input">
+        <input type="search" name="" id="" placeholder="Search Keyword" ><br><br>
+        <select name="" id="sortselect">
+            <option value="">Category</option>
+            <option value="Low">Low</option>
+            <option value="Hight">High</option>
+            <option value="az">A-Z</option>
+            <option value="za">Z-A</option>
+        </select>
+      </div>
+      <div id="cart"></div>
+        <div id="main"></div>
+</div>
+<nav aria-label="Page navigation example" id="page">
+  <ul class="pagination">
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Previous">
+        <span aria-hidden="true">&laquo;</span>
+      </a>
+    </li>
+    <li class="page-item"><a class="page-link" href="product.html">1</a></li>
+    <li class="page-item"><a class="page-link" href="product2.html">2</a></li>
+    <li class="page-item"><a class="page-link" href="product3.html">3</a></li>
+    <li class="page-item"><a class="page-link" href="product4.html">4</a></li>
+    <li class="page-item"><a class="page-link" href="product5.html">5</a></li>
+    <li class="page-item">
+      <a class="page-link" href="#" aria-label="Next">
+        <span aria-hidden="true">&raquo;</span>
+      </a>
+    </li>
+  </ul>
+</nav>
+
+<script>
+    var womendata = [{
+        id	: 1,
+        title :	"Cervical pillow for airplane car office nap pillow",
+        price :	40,
+        image :	"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRmxTtujwKcNOsKoBz7Xatdbgrn7CrxfgU8Tw&usqp=CAU"
+        },{
+        id	: 2,
+        title :	"Geometric striped flower home classy decor",
+        price :	50,
+        image :	"https://m.media-amazon.com/images/I/715xvvpMBhL.jpg"
+        },
+        {
+         id	: 3,
+        title :	"Foam filling cotton slow rebound pillows",
+        price :	80,
+        image :	"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJH7KJHLe2ktDUI9V9iR7AR1Wny2wC3Rkcoe1ayrQSE5KjqJf8AN_cIq6KVXNbjIRiDPM&usqp=CAU"
+        },
+        {
+        id	: 4,
+        title :	"Memory foam filling cotton Slow rebound pillows",
+        price :	20,
+        image :	"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSxttXQYvuXVo2XDHKwHZQReiDhS3C9ianR-CRBYEHDx7_5qXN6l_qxklvMwFecxwSxOn4&usqp=CAU"
+        },
+        {
+        id	: 5,
+        title :	"Memory foam filling cotton Slow rebound pillows",
+        price :	70,
+        image :	"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSuJatBEMxsZr9RlFOhapls64nJjcFll3_3Aw_3uwAgNyZFg88FPBuzUkD7PRaQyFE9x_w&usqp=CAU"
+        },
+        {
+        id	: 6 ,
+        title :	"Sleeping orthopedic sciatica Back Hip Joint Pain relief",
+        price :	55,
+        image :	"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQfy6-0pOGkmr6edCEqlIRUg2fG9SmmRx2AtfwYb3Z3jSHiFgOKBXTJMsSrgoWcnuoNlwQ&usqp=CAU"
+        },{
+        id	: 7,
+        title :	"Geometric striped flower home classy decor",
+        price :	90,
+        image :	"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTqANBU7wtvP03mUM1yW3TpN6kRheh6NlglAN7-0jB8hiYT27OqQ51iNNMspfexYT6slPY&usqp=CAU"
+        },
+        {
+         id	: 8,
+        title :	"Foam filling cotton slow rebound pillows",
+        price :	80,
+        image :	"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQJH7KJHLe2ktDUI9V9iR7AR1Wny2wC3Rkcoe1ayrQSE5KjqJf8AN_cIq6KVXNbjIRiDPM&usqp=CAU"
+        },
+        {
+        id	: 9,
+        title :	"Memory foam filling cotton Slow rebound pillows",
+        price :	60,
+        image :	"https://m.media-amazon.com/images/I/712QdOcMpzL._AC_UF894,1000_QL80_.jpg"
+        },
+        {
+        id	: 10,
+        title :	"Sleeping orthopedic sciatica Back Hip Joint Pain relief",
+        price :	30,
+        image :	"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlNHxpVJQB9FKoyxf27YwLGLQthOFYqL3E-w&usqp=CAU"
+        }
+    ]
+    var cartbtn=document.createElement("button")
+        cartbtn.innerText="CART";
+        // document.querySelector("#cart").append(cartbtn)
+        // cartbtn.classList.add("cart-btn")
+        cartbtn.addEventListener("click",function(){
+          window.open("cart.html")
+         })
+
+    function displayData(data){
+        document.querySelector("#main").innerHTML = ""
+        data.map((el,i)=>{
+            var div = document.createElement("div")
+
+            var image = document.createElement("img")
+            image.setAttribute("src",el.image)
+
+            var name = document.createElement("h5")
+            name.innerHTML = el.title
+
+            var price = document.createElement("p")
+            price.innerHTML = el.price
+
+            var button=document.createElement("button");
+            button.innerHTML="Add to Cart"
+            button.addEventListener("click",function(){
+                  addtocart(i)
+            })
+
+            div.append(image,name,price,button);
+            document.querySelector("#main").appendChild(div)
+        })
+    }
+    displayData(womendata);
+
+    let sortselect  = document.querySelector("#sortselect");
+    sortselect.addEventListener("change",()=>{
+        let selectvalue = sortselect.value;
+        let sortedData = [];
+        if(selectvalue == "Low"){
+            sortedData = womendata.slice().sort((a,b)=>a.price - b.price)
+        }else if(selectvalue == "Hight"){
+            sortedData =  womendata.slice().sort((a,b)=>b.price - a.price)
+        }
+        else if(selectvalue == "az"){
+            sortedData =womendata.slice().sort((a,b)=>a.title.localeCompare(b.title))
+        }
+        else if(selectvalue == "za"){
+            sortedData = womendata.slice().sort((a,b)=>b.title.localeCompare(a.title))
+        }
+        displayData(sortedData);
+    })
+
+    function addtocart(index){
+      var product=womendata.filter(function(el,i){
+           return i==index;
+      })
+      var products=JSON.parse(localStorage.getItem("cart")) || []
+      products.push(product[0])
+      alert("Added to Cart!!")
+      localStorage.setItem("cart",JSON.stringify(products))
+    }
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--------------------------------------------- section7------------------------------------ -->
+<div id="sec7">
+</div>
+<!--------------------------------------------- section7------------------------------------ -->
+
+
+<!--------------------------------------------- section8------------------------------------ -->
+<div id="sec8">
+    <p id="sec8-p1">
+      Credibly innovate granular internal or organic sources whereas standards.
+    </p>
+    <p id="sec8-p2">
+      Seamlessly empower fully researched growth strategies and interoperable internal or “organic” sources. Credibly innovate granular internal or “organic” sources whereas high standards in web-readiness.
+    </p>
+  </div>
+  <!--------------------------------------------- section8------------------------------------ -->
+  
+  
+  
+  
+  <!--------------------------------------------- section9------------------------------------ -->
+  <div id="sec9">
+    <div id="flex">
+      <center>
+      <img src="https://preview.colorlib.com/theme/pillowmart/img/icon/feature_icon_1.svg" alt="">
+      <p>Credit Card Support</p>
+    </center>
+    </div>
+    <div id="flex">
+      <center>
+      <img src="https://preview.colorlib.com/theme/pillowmart/img/icon/feature_icon_2.svg" alt="">
+      <p>Online Order</p>
+    </center>
+    </div>
+    <div id="flex">
+      <center>
+    <img src="https://preview.colorlib.com/theme/pillowmart/img/icon/feature_icon_3.svg" alt="">
+    <p>Free Delivery</p>
+    </center> 
+    </div>
+    <div id="flex">
+      <center>
+     <img src="https://preview.colorlib.com/theme/pillowmart/img/icon/feature_icon_4.svg" alt="">
+     <p>Product with Gift</p>
+    </center>
+    </div>
+  </div>
+  <!--------------------------------------------- section9------------------------------------ -->
+  
+  
+  
+  
+  <!--------------------------------------------- footer------------------------------------ -->
+  <footer>
+    <div id="ft1">
+      <p id="ft1-logo">Pillow-Mart</p>
+      <p id="ft1-p2">Seamlessly empower fully researched growth strategies and interoperable internal</p>
+      <div id="icon">
+        <button type="button" class="btn btn-light" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="facebook" id="ft1-btn">
+          <i class="bi bi-facebook"></i>
+        </button>
+        <button type="button" class="btn btn-light" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="threads" id="ft1-btn">
+          <i class="bi bi-threads"></i>
+        </button>
+        <button type="button" class="btn btn-light" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="google" id="ft1-btn">
+          <i class="bi bi-google"></i>
+        </button>
+        <button type="button" class="btn btn-light" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="linkedin" id="ft1-btn">
+          <i class="bi bi-linkedin"></i>
+        </button>
+      </div>
+    </div>
+    <div id="ft2">
+      <p id="ft2-p">Features</p>
+      <li>Home</li>
+      <li>About</li>
+      <li>Product</li>
+      <li>Page</li>
+      <li>Blog</li>
+      <li>Contact</li>
+    </div>
+    <div id="ft3">
+      <p id="ft3-p1">Get promotions & updates!</p>
+      <p id="ft3-p2">Seamlessly empower fully researched growth strategies and interoperable internal or “organic” sources credibly innovate granular internal .</p>
+      <input type="text" placeholder="Enter Your Email"><button id="ft3-btn">Subscribe</button>
+      
+    </div>
+  </footer>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+  <!--------------------------------------------- footer------------------------------------ -->

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card</title>
+    <!-- <link rel="stylesheet" href="css/style.css"> -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <!-- bootstrap icons  -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <!-- bootstrap icons  -->
+       <!-- animated css  -->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+       <!-- animated css  -->
+    <style>
+        .head{
+            width: 100%;
+            height: auto;
+            background-color: rgb(253, 223, 253);
+}
+        header #imgs{
+           height: 400px;
+           width: 100%;
+        }
+        header{
+            height: 100vh;
+            background-size: cover;
+        }
+        header i{
+            right: 24.5%;
+        }
+        .subheader{
+            width: 95%;
+            background-color: rgb(253, 223, 253);
+        }
+        .subheader a{
+            color: rgb(22, 22, 109);
+        }
+        .subheader i{
+            color: rgb(22, 22, 109);
+        }
+        header input{
+            border-top: none;
+            border-left: none;
+            border-right: none;
+            background: transparent;
+        }
+        header h1{
+            font-size: 50px;
+        }
+        .extr{
+            width: 90%;
+            background-color: rgb(253, 223, 253);
+            height: 100px;
+            margin-left: 10%;
+        }
+        .txt{
+            top: 30%;
+            right: 15%;
+        }
+        .dispatch{
+    width: 100%;
+    height: 350px;
+    background-color: rgb(253, 223, 253);
+}
+.cash{
+    width: 22%;
+}
+.cash i{
+    font-size: 55px;
+    color: rgb(36, 36, 86);
+}
+.cash h6{
+    color: rgb(78, 78, 114);
+}
+.cash:hover{
+    border: 1px solid lightgray;
+}
+.end{
+    width: 100%;
+    background-color: rgb(253, 223, 253);
+}
+footer{
+    width: 100%;
+    height: 500px;
+    /* margin-left: 3%; */
+    background-color: rgb(25, 25, 58);
+}
+.ftre{
+    width: 30%;
+    height: 300px;
+}
+.ftr{
+    width: 22%;
+    height: 250px;
+}
+
+.up button{
+    background-color: coral;
+    border: none;
+    padding: 15px;
+    width: 25%;
+}
+.up button:hover{
+    background-color: darkgreen;
+    border: none;
+}
+.cal h5{
+    margin-left: 75%;
+    margin-top: 15px;
+}
+.cal button{
+    width: 22%;
+    padding: 15px;
+    margin-left: 78%;
+    margin-top: 18px;
+    background-color: coral;
+    border: none;
+}
+#sele{
+    margin-left: 75%;
+    margin-top: 15px;
+    width: 25%;
+    padding: 10px;
+    background-color: rgb(231, 220, 220);
+}
+#sel{
+    margin-left: 75%;
+    margin-top: 15px;
+    padding: 10px;
+    background-color: rgb(231, 220, 220);
+
+}
+.shap button:hover{
+    background-color: darkgreen;
+    border: none;
+}
+.btns{
+    margin-left: 50%;
+    font-size: 18px;
+}
+.btns button{
+    padding: 15px;
+    width: 41%;
+    margin-left: 10px;
+    background-color: coral;
+    border: none;
+    transition: 1s;
+}
+.btns button:hover{
+    background-color: darkgreen;
+    border: none;
+}
+#abtn{
+    text-decoration: none;
+    color: white;
+}
+#cart h4{
+    margin-left: 85%;
+    margin-top: 130px;
+    font-size: 20px;
+}
+#cart img{
+    margin-left: 4%;
+}
+#cart h5{
+    margin-left: 20%;
+    margin-top: -130px;
+}
+#cart p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 55%;
+    margin-top:-40px ;
+}
+#cart img{
+    width: 200px;
+    height: 200px;
+    border: 1px solid white;
+}
+#cart h6{
+    font-size: 20px;
+    font-weight: 600;
+    margin-left: 70%;
+    margin-top:-30px ;
+}
+#cart h3{
+    font-size: 20px;
+    margin-left: 90%;
+    margin-top: -50px;
+}
+#cart button{
+    margin-left: 72%;
+    background-color: white;
+    border: none;
+    width: 80px;
+    border: 1px solid coral;
+    font-weight: 600;
+    
+}
+#top{
+    margin-top: 100px;
+}
+</style>
+</head>
+<body>
+    <header class="head">
+        <div class="subheader navbar navbar-expand-lg justify-content-evenly">
+            <div class="navbar-brand">
+                <img src="image/logo.png" alt="" class="w-75">
+            </div>
+            <button type="button" class="navbar-toggler" data-bs-toggle="collapes" data-bs-target="#navbar-support">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <nav>
+                <ul class="navbar-nav">
+                    <li class="nav-item"><a href="" class="nav-link fs-5">Home</a></li>
+                    <div class="dropdown">
+                        <a class="bdropdown-toggle nav-link ps-3 fs-5 dropdown" data-bs-toggle="dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                         Product
+                       </a> 
+                       <!-- <li class="nav-item"><a href="" class="nav-link ps-3 fs-5 dropdown" data-bs-toggle="dropdown">Page</li> -->
+                       <ul class="dropdown-menu">
+                         <li><a class="dropdown-item" href="categories.html">Categories</a></li>
+                         <li><a class="dropdown-item" href="product.html">Product-details</a></li>
+                       </ul>
+                     </div>       
+                    <li class="nav-item"><a href="" class="nav-link ps-3 fs-5">About</a></li>
+                    <div class="dropdown">
+                         <a class="bdropdown-toggle nav-link ps-3 fs-5 dropdown" data-bs-toggle="dropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          Page
+                        </a> 
+                        <!-- <li class="nav-item"><a href="" class="nav-link ps-3 fs-5 dropdown" data-bs-toggle="dropdown">Page</li> -->
+                        <ul class="dropdown-menu">
+                          <li><a class="dropdown-item" href="login.html">Log in</a></li>  
+                          <li><a class="dropdown-item" href="card.html">Card</a></li>
+                          <li><a class="dropdown-item" href="check-out.html">check-out</a></li>
+                        </ul>
+                      </div>
+
+                    <li class="nav-item"><a href="Blog.html" class="nav-link ps-3 fs-5">Blog</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link ps-3 fs-5">Contact</a></li>
+                </ul>
+            </nav>
+            <input type="text" name="" id="" placeholder="Search Products" class="position-relative ps-1 pe-5 pb-2"><i class="bi bi-search position-absolute"></i>
+            <a href="" class="text-decoration-none fs-5">My Account</a>
+            <i class="bi bi-bag-check-fill fs-2"></i>
+        </div>
+        <img src="image/h1_hero.png" alt="" id="imgs" class="position-relative">
+        <div class="position-absolute txt wow animate__animated animate__fadeInRight">
+            <h1 class="text-white fw-bolder">CART LIST</h1>
+            <a href="" class="text-decoration-none fw-bold fs-5 text-white">Home</a> <a href="" class="text-decoration-none fw-bold fs-5 text-white">>Cart list</a>
+        </div>
+    </header>
+    <!-- <div class="extr"></div> -->
+    <br><br>
+    <div class="container d-flex border-bottom pb-3 mt-5 wow animate__animated animate__zoomIn">
+        <div class="col col-6">Product</div>
+        <div class="col col-6 d-flex justify-content-around">
+            <h6>Price</h6>
+            <h6>Quantity</h6>
+            <h6>Total</h6>
+        </div>
+    </div>
+     
+    <div id="cart"></div>
+    
+    <hr>
+     <div class="container d-flex justify-content-end mt-4 border-bottom pb-3 wow animate__animated animate__zoomIn" id="top">
+        <div id="top">
+            <h6 class="me-5 fs-5 text-secondary">Shipping</h6>
+        </div>
+        <div class="text-secondary" id="top">
+            Flat Rate: $5.00 <input type="radio" name="" id="" class="" value=""><br>
+            Free Shipping &nbsp;<input type="radio" name="" id="" class="ms-1" value=""><br>
+            Flat Rate: $5.00<input type="radio" name="" id="" class="ms-1" value=""><br>
+            Flat Rate: $5.00 <input type="radio" name="" id="" class="mb-3" value=""><br>
+        </div>
+    </div>
+    <div class="container d-flex flex-column cal border-bottom pb-3 wow animate__animated animate__zoomIn shap">
+        <h5 class="text-secondary">Calculate Shipping</h5>
+        <select name="" id="sele" class="rounded-2 border">
+            <option value="" class="">India</option>
+            <option value="" class="">UK</option>
+            <option value="" class="">USA</option>
+        </select>
+        <select name="" id="sele" class="rounded-2 border">
+            <option value="" class="">Select a state</option>
+            <option value="" class="">Select a state</option>
+            <option value="" class="">Select a state</option>
+        </select>
+        <input type="text" name="" id="sel" placeholder="Postcode/Zipcode" class="w-25 rounded-2 border"> 
+        <button type="button" class="mb-3 text-white rounded-2">UPDATE DETAILS</button>
+    </div>
+    <div class="mt-5 mb-5 btns">
+        <button type="button" class="text-white rounded-2"> <a href="categories.html" id="abtn">CONTINUE SHOPING</a></button>
+        <button type="button" class="text-white rounded-2"><a href="check-out.html" id="abtn">PROCEED TO CHECKOUT</a></button>
+    </div><br><br>
+    <div class="dispatch mt-5 d-flex justify-content-evenly align-items-center">
+        <div class="cash p-4">
+            <i class="bi bi-truck"></i>
+            <h4 class="mt-4 pb-2">Fast & Free Delivery</h4>
+            <h6>Free delivery on all orders</h6>
+        </div>
+        <div class="cash p-4">
+            <i class="bi bi-file-earmark-lock2"></i>
+            <h4 class="mt-4 pb-2">Secure Payment</h4>
+            <h6>Free delivery on all orders</h6>
+        </div>
+        <div class="cash p-4">
+            <i class="bi bi-wallet2"></i>
+            <h4 class="mt-4 pb-2">Money Back Guarantee</h4>
+            <h6>Free delivery on all orders</h6>
+        </div>
+        <div class="cash p-4">
+            <i class="bi bi-clock-history"></i>
+            <h4 class="mt-4 pb-2">Online Support</h4>
+            <h6>Free delivery on all orders</h6>
+        </div>
+    </div>
+    <div class="end">
+        <footer class="d-flex justify-content-evenly align-items-center text-white">
+            <div class="ftre">
+                <img src="image/logo2_footer.png" alt="" class="ms-5 mt-4 p-3">
+                <p class="p-3 ms-5">Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra ornare, eros dolor interdum nulla.</p>
+                <i class="bi bi-twitter ps-2 ms-5 fs-4"></i>
+                <i class="bi bi-facebook ps-2 me-2 fs-4"></i>
+                <i class="bi bi-pinterest fs-4"></i>
+            </div>
+            <div class="ftr d-flex flex-column text-center">
+                <h3 class="m-2">Quick links</h3>
+                <br>
+                <a href="" class="m-2 text-decoration-none text-white">Image Licensin</a>
+                <a href="" class="m-2 text-decoration-none text-white">Style Guide</a>
+                <a href="" class="m-2 text-decoration-none text-white">Privacy Policy</a>
+            </div>
+            <div class="ftr d-flex flex-column text-center">
+                <h3 class="m-2">Shop Category</h3>
+                <br>
+                <a href="" class="m-2 text-decoration-none text-white">Image Licensin</a>
+                <a href="" class="m-2 text-decoration-none text-white">Style Guide</a>
+                <a href="" class="m-2 text-decoration-none text-white">Privacy Policy</a>
+            </div>
+            <div class="ftr d-flex flex-column text-center">
+                <h3 class="m-2">Pertners</h3>
+                <br>
+                <a href="" class="m-2 text-decoration-none text-white">Image Licensin</a>
+                <a href="" class="m-2 text-decoration-none text-white">Style Guide</a>
+                <a href="" class="m-2 text-decoration-none text-white">Privacy Policy</a>
+            </div>
+        </footer>
+    </div>
+</body>
+<script src="js/wow.min.js"></script>
+<script>
+//   new WOW().init();
+$(document).ready(function(){
+  new WOW().init();
+});
+</script>
+<script src="cart.js"></script>
+</html>

@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ABOUT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+<link rel="stylesheet" href="home-style.css">
+<link rel="stylesheet" href="product-style.css">
+<link rel="stylesheet" href="about-style.css">
+</head>
+<body>
+
+
+<!---------------------------------------------- header -------------------------------------->
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+          <a class="navbar-brand" href="#">
+            <img src="https://preview.colorlib.com/theme/pillowmart/img/logo.png" alt="">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav m-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active"  href="home.html">Home</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="about.html">About</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="product.html">Products</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Page
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Product Checkout</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Shopping Cart</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Confirmation</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="blog.html">Blog</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </li>
+            </ul>
+            <form class="d-flex" id="icon">
+  
+  <!-- Modal -->
+  <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <i class="bi bi-search"></i>
+  </button>
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Search You Like</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <input type="search" style="width: 460px; border-top: none; border-right:none; border-left: none;">
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+                <i class="bi bi-cart-fill">
+                    <span class=" translate-middle badge rounded-pill bg-danger" id="num">
+                        9+
+                    </span>
+                </i>
+            </form>
+          </div>
+        </div>
+      </nav>
+<!---------------------------------------------- header -------------------------------------->
+<div id="heading">
+    <center><h1 id="hd">About</h1></center>
+</div>
+
+<div id="about">
+    <h6>Our Mission</h6>
+    <p>
+        Donec imperdiet congue orci consequat mattis. Donec rutrum porttitor sollicitudin. Pellentesque id dolor tempor sapien feugiat ultrices nec sed.
+    </p>
+</div>
+<img src="https://preview.colorlib.com/theme/pillowmart/img/about_us_video.png" alt="" id="ab-im">
+<div class="video  animate__animated animate__flipInX">
+    <i class="bi bi-play-fill" onclick="playvideo('images/video.mp4')"></i>
+</div>
+<div class="video-player" id="videoplayer">
+<video width="100%" controls autoplay id="myvideo">
+<source src="novotel-hotel-lifestyle-video-clip.mp4" type="video/mp4">
+</video>
+<i class="bi bi-x" id="close-btn" onclick="stopvideo()"></i>
+</div>
+<script>
+    var videoplayer = document.getElementById("videoplayer");
+    var myvideo = document.getElementById("myvideo");
+    function stopvideo(){
+        videoplayer.style.display = "none";
+    }
+    function playvideo(file){
+        // myvideo.src = file;
+        videoplayer.style.display = "block";
+
+    }
+</script>
+
+
+
+<!--------------------------------------------- section8------------------------------------ -->
+<div id="sec8">
+    <p id="sec8-p1">
+      Credibly innovate granular internal or organic sources whereas standards.
+    </p>
+    <p id="sec8-p2">
+      Seamlessly empower fully researched growth strategies and interoperable internal or “organic” sources. Credibly innovate granular internal or “organic” sources whereas high standards in web-readiness.
+    </p>
+  </div>
+  <!--------------------------------------------- section8------------------------------------ -->
+  
+  
+  
+  
+  <!--------------------------------------------- section9------------------------------------ -->
+  <div id="sec9">
+    <div id="flex">
+      <center>
+      <img src="https://preview.colorlib.com/theme/pillowmart/img/icon/feature_icon_1.svg" alt="">
+      <p>Credit Card Support</p>
+    </center>
+    </div>
+    <div id="flex">
+      <center>
+      <img src="https://preview.colorlib.com/theme/pillowmart/img/icon/feature_icon_2.svg" alt="">
+      <p>Online Order</p>
+    </center>
+    </div>
+    <div id="flex">
+      <center>
+    <img src="https://preview.colorlib.com/theme/pillowmart/img/icon/feature_icon_3.svg" alt="">
+    <p>Free Delivery</p>
+    </center> 
+    </div>
+    <div id="flex">
+      <center>
+     <img src="https://preview.colorlib.com/theme/pillowmart/img/icon/feature_icon_4.svg" alt="">
+     <p>Product with Gift</p>
+    </center>
+    </div>
+  </div>
+  <!--------------------------------------------- section9------------------------------------ -->
+  
+  
+  
+  
+  <!--------------------------------------------- footer------------------------------------ -->
+  <footer>
+    <div id="ft1">
+      <p id="ft1-logo">Pillow-Mart</p>
+      <p id="ft1-p2">Seamlessly empower fully researched growth strategies and interoperable internal</p>
+      <div id="icon">
+        <button type="button" class="btn btn-light" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="facebook" id="ft1-btn">
+          <i class="bi bi-facebook"></i>
+        </button>
+        <button type="button" class="btn btn-light" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="threads" id="ft1-btn">
+          <i class="bi bi-threads"></i>
+        </button>
+        <button type="button" class="btn btn-light" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="google" id="ft1-btn">
+          <i class="bi bi-google"></i>
+        </button>
+        <button type="button" class="btn btn-light" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="linkedin" id="ft1-btn">
+          <i class="bi bi-linkedin"></i>
+        </button>
+      </div>
+    </div>
+    <div id="ft2">
+      <p id="ft2-p">Features</p>
+      <li>Home</li>
+      <li>About</li>
+      <li>Product</li>
+      <li>Page</li>
+      <li>Blog</li>
+      <li>Contact</li>
+    </div>
+    <div id="ft3">
+      <p id="ft3-p1">Get promotions & updates!</p>
+      <p id="ft3-p2">Seamlessly empower fully researched growth strategies and interoperable internal or “organic” sources credibly innovate granular internal .</p>
+      <input type="text" placeholder="Enter Your Email"><button id="ft3-btn">Subscribe</button>
+      
+    </div>
+  </footer>
+  <script>
+    const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+    const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+  <!--------------------------------------------- footer------------------------------------ -->
